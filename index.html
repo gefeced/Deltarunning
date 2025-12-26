@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Deltaruning</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <div id="gameWrap">
+        <canvas id="game" width="320" height="240" aria-label="Deltaruning"></canvas>
+        <div id="ui" aria-hidden="true">
+          <div id="titleMenu" class="panel">
+            <div class="title">Deltaruning</div>
+            <button id="playBtn" class="btn" type="button">Play</button>
+            <button id="settingsBtn" class="btn" type="button">Settings</button>
+          </div>
+          <div id="settingsMenu" class="panel hidden">
+            <div class="controls">
+              <div>WASD = Move</div>
+              <div>Enter = Interact / Next dialogue</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="main.js"></script>
+  </body>
+</html>
